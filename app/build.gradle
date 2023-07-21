@@ -35,6 +35,12 @@ android {
     }
 }
 
+android{
+    buildFeatures{
+        viewBinding = true
+    }
+}
+
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
