@@ -1,4 +1,3 @@
 package com.rondroid.explicitintenrecyclerview
 
-class countryData {
-}
+class CountryData(val country:String, val capital:String)
