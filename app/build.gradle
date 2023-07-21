@@ -1,16 +1,19 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+
+    //Kotlin extensions plugin
+    id 'org.jetbrains.kotlin.android.extensions'
 }
 
 android {
     namespace 'com.rondroid.explicitintenrecyclerview'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.rondroid.explicitintenrecyclerview"
         minSdk 22
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -32,6 +35,12 @@ android {
     }
 }
 
+android{
+    buildFeatures{
+        viewBinding = true
+    }
+}
+
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
@@ -41,4 +50,12 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    //    RecyclerView library
+    implementation "androidx.recyclerview:recyclerview:"
+    // For control over item selection of both touch and mouse driven selection
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+
+//    Card view
+    implementation "androidx.cardview:cardview:1.0.0"
 }
