@@ -9,39 +9,40 @@
     android:backgroundTint="@color/white">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content"
-        android:padding="15dp">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
 
-        <TextView
-            android:id="@+id/item_countryTv"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:text="Italy"/>
+            <TextView
+                android:id="@+id/item_countryTv"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Italy"/>
 
-        <TextView
-            android:id="@+id/item_countryCapitalTv"
-            android:textColor="@color/black"
-            android:layout_below="@+id/item_countryTv"
-            android:textSize="20sp"
-            android:textStyle="normal"
-            android:layout_marginTop="10dp"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:text="Rome"/>
+            <TextView
+                android:id="@+id/item_countryCapitalTv"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:layout_marginTop="10dp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Rome"/>
+        </LinearLayout>
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="130dp"
-            android:layout_marginEnd="50dp"
-            android:layout_toEndOf="@id/item_countryTv"
-            android:background="@drawable/ic_baseline_delete_24" />
-
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_baseline_delete_24"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"/>
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
