@@ -37,7 +37,6 @@ class RecyclerViewActivity : AppCompatActivity() {
         }
 
 
-
         val myAdapter = CountryAdapter(arrayList, this)
         recyclerViewCountry.adapter = myAdapter
 
