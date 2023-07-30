@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.countryitem_layout.view.*
 
-class CountryAdapter(val countryArrayList:ArrayList<CountryData>, val context: Context):RecyclerView.Adapter<CountryAdapter.CountryViewHolder>(){
+class CountryAdapter(private val countryArrayList:ArrayList<CountryData>, val context: Context):RecyclerView.Adapter<CountryAdapter.CountryViewHolder>(){
 
     inner class CountryViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
 

@@ -31,9 +31,11 @@ class RecyclerViewActivity : AppCompatActivity() {
         recyclerViewCountry.layoutManager = LinearLayoutManager(this)
 
         // Retrieve the country list from the intent
-        val intentCountryList = intent.getParcelableArrayListExtra<CountryData>("countryList")
-        if (intentCountryList != null) {
-            arrayList.addAll(intentCountryList)
+        if (intent.hasExtra("countryList")) {
+            val intentCountryList = intent.getParcelableArrayListExtra<CountryData>("countryList")
+            if (intentCountryList != null) {
+                arrayList.addAll(intentCountryList)
+            }
         }
 
 
