@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                     edTvCapital.text?.clear()
                     // Directly navigate to RecyclerViewActivity after adding user data
                     val intent = Intent(this@MainActivity, RecyclerViewActivity::class.java)
-                    intent.putParcelableArrayListExtra("countryList", ArrayList(countryList))
+                    intent.putExtra("countryList", countryList)
                     startActivity(intent)
                 } else {
                     Toast.makeText(this@MainActivity, "Please enter both name and age", Toast.LENGTH_SHORT).show()
